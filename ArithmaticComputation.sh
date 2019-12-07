@@ -10,6 +10,10 @@ eq1=$(($a+$b*$c))
 
 eq2=$(($a*$b+$c))
 
+eq3=$(($c+$a/$b)
+
 echo "Equation1:- "$eq1 
 
 echo "Equation2:- "$eq2
+
+echo "Equation3:- "$eq3
