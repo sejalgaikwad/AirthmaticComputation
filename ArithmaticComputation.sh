@@ -31,4 +31,8 @@ resultDictionary[2]=$eq3
 
 resultDictionary[3]=$eq4
 
-
+for i in ${!resultDictionary[@]}
+do
+	resultArray[$i]=${resultDictionary[$i]}
+done
+	echo ${resultArray[@]}
