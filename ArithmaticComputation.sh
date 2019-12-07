@@ -12,8 +12,12 @@ eq2=$(($a*$b+$c))
 
 eq3=$(($c+$a/$b)
 
+eq4=$(($a%$b-$c)
+
 echo "Equation1:- "$eq1 
 
 echo "Equation2:- "$eq2
 
 echo "Equation3:- "$eq3
+
+echo "Equation4:- "$eq4
