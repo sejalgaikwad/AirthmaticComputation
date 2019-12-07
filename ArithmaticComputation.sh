@@ -13,7 +13,7 @@ eq2=$(($a*$b+$c))
 
 eq3=$(($c+$a/$b))
 
-eq4=$(($a%$b-$c))
+eq4=$(($a%$b+$c))
 
 echo "Equation1:- "$eq1 
 
@@ -35,4 +35,9 @@ for i in ${!resultDictionary[@]}
 do
 	resultArray[$i]=${resultDictionary[$i]}
 done
-	echo ${resultArray[@]}
+
+for i in ${!resultDictionary[@]}
+do
+	echo ${resultArray[$i]}
+done | sort -nr
+
