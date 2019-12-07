@@ -36,8 +36,15 @@ do
 	resultArray[$i]=${resultDictionary[$i]}
 done
 
+echo "Result in Desending Oreder:- "
 for i in ${!resultDictionary[@]}
 do
 	echo ${resultArray[$i]}
 done | sort -nr
+
+echo "Result in Ascending Oreder:- "
+for i in ${!resultDictionary[@]}
+do
+	echo ${resultArray[$i]}
+done | sort -n
 
